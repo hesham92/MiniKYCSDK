@@ -25,7 +25,7 @@ let package = Package(
         .binaryTarget(
             name: "MiniKYCSDK",
             url: "https://github.com/hesham92/MiniKYCSDK/releases/download/0.2.0/MiniKYCSDK.xcframework.zip",
-            checksum: "REPLACE_AFTER_FIRST_BINARY_RELEASE"
+            checksum: "840af891b3964ad95396527613e1b3cee0ce71f442f23cd4232d5a6429c7afa5"
         ),
     ]
 )
