@@ -57,7 +57,7 @@ Your host app needs:
 | 1. Initialize | `MiniKYC.initialize(baseURL:apiKey:...)` | Returns a session token. |
 | 2. Capture ID front | `MiniKYC.capture(captureType: .frontId, ...)` | Returns a `UIViewController` you present. |
 | 3. Extract document | `MiniKYC.send(.frontId, document: ...)` | On-device OCR via Vision. |
-| 4. Capture ID back | `MiniKYC.capture(captureType: .backId, ...)` | (Skip for passports.) |
+| 4. Capture ID back | `MiniKYC.capture(captureType: .backId, ...)` | |
 | 5. Liveness selfie | `MiniKYC.capture(captureType: .selfie, ...)` | ARKit 4-direction head-pose challenge with Arabic voice prompts. |
 | 6. Read status | `MiniKYC.getFinalStatus()` | `.verified` on success. |
 
@@ -91,7 +91,7 @@ public enum MiniKYC {
 }
 
 public enum CaptureType {
-    case frontId, backId, selfie, passport, vehicleLicenseFront, vehicleLicenseBack
+    case frontId, backId, selfie, vehicleLicenseFront, vehicleLicenseBack
 }
 ```
 
